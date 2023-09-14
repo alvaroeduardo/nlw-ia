@@ -1,0 +1,38 @@
+# @name get-prompts
+GET http://localhost:3333/prompts
+
+###
+
+# @name upload
+POST http://localhost:3333/videos
+Content-Type: multipart/form-data; boundary=----VideoTeste
+
+------VideoTeste
+Content-Disposition: form-data; name="file"; filename="video-alvaro.mp3"
+Content-Type: audio/mpeg
+
+< ./video-alvaro.mp3
+
+------VideoTeste--
+
+###
+
+# @name create-transcription
+POST http://localhost:3333/videos/d905eeaf-38a7-4cb3-945f-989f5647c537/transcription
+Content-Type: application/json
+
+{
+    "prompt": "startup, inovação, tecnologia"
+}
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+    "videoId": "d905eeaf-38a7-4cb3-945f-989f5647c537",
+    "temperature": 0.5,
+    "template": "Gere um resumo sucinto da transcrição do vídeo informado a seguir: ''' {transcription} '''"
+}
