@@ -27,10 +27,6 @@ O projeto funciona da seguinte maneira:
 6. Com base na transcrição do vídeo e no prompt selecionado, a IA gera uma resposta.
 7. A resposta gerada pela IA é disponibilizada para o usuário.
 
-## Nota sobre Shadcn
-
-É importante observar que o Shadcn não faz parte das tecnologias utilizadas neste projeto. Ele parece ser uma biblioteca de componentes criada com Radix UI e Tailwind CSS, mas não está diretamente relacionado ao funcionamento do **Projeto Upload AI**.
-
 ## Créditos
 
 Este projeto é ensinado pela Rocketseat e foi desenvolvido com base em várias tecnologias modernas. Qualquer referência específica a recursos e configurações do projeto deve ser consultada no material fornecido pela Rocketseat.
