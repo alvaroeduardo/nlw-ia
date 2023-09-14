@@ -2,6 +2,8 @@
 
 O **Projeto Upload AI** é uma plataforma que utiliza diversas tecnologias modernas para realizar a conversão de vídeos em formato MP4 para MP3 e transcrever o conteúdo utilizando o modelo GPT-3.5 da OpenAI. Neste README, você encontrará informações sobre as tecnologias utilizadas e uma visão geral do funcionamento do projeto.
 
+![Imagem do Projeto](https://imgur.com/zA9n0LJ.png)
+
 ## Tecnologias Utilizadas
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
